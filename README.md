@@ -114,7 +114,7 @@ Figma
 </html>
 ```
 # OUTPUT:
-![alt text](<Screenshot 2025-10-07 231618.png>)
-![alt text](<Screenshot 2025-10-07 231641.png>)
+![alt text](image.png)
+
 # RESULT:
 The program to design, develop and deploy a web application for event registration is completed successfully.
