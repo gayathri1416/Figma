@@ -30,88 +30,57 @@ Figma
 
 # CODE:
 ```
+html: 
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dribble Clone</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">DribbbleClone</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          <li class="nav-item"><a class="btn btn-primary ms-3" href="#">Sign Up</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="text-center bg-light py-5">
-    <div class="container">
-      <h1 class="display-4">Discover Creative Work</h1>
-      <p class="lead">Showcase your designs and get inspired by others.</p>
-      <a href="#" class="btn btn-dark btn-lg">Get Started</a>
-    </div>
-  </section>
-
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center">Featured Shots</h2>
-      <div class="row g-3">
-        <!-- Repeat these blocks for 6 sample shots -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="1st image.png" class="card-img-top" alt="Shot 1">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="image2.webp" class="card-img-top" alt="Shot 2">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="image3.webp" class="card-img-top" alt="Shot 3">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="image4.webp" class="card-img-top" alt="Shot 4">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="image5.webp" class="card-img-top" alt="Shot 5">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="image6.webg" class="card-img-top" alt="Shot 6">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2025 DribbbleClone. All rights reserved.</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="image"><img class="white-iphone" src="img/white-iphone-16e-mockup-upper-left-view-label.png" /></div>
+  </body>
 </html>
+
+style.css:
+
+.image {
+  width: 782px;
+  height: 955px;
+}
+
+.image .white-iphone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 782px;
+  height: 955px;
+  object-fit: cover;
+}
+
+global.css 
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
 ```
 # OUTPUT:
 ![alt text](image.png)
